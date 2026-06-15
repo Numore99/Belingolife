@@ -25,18 +25,12 @@
 .contact-panel{background:#fff}.contact-panel p{font-size:1.4rem}.contact-card{display:flex;align-items:center;justify-content:center;min-height:130px;font-size:1.5rem;color:var(--ink)}
 .work{background:var(--yellow);min-height:88svh}.work:before{content:"";position:absolute;inset:0 24% 0 51%;background:#f8f1e6}.work h2{position:relative;z-index:1;font-size:clamp(5rem,14vw,13rem)}.work h2 span{margin-left:15vw}.work h2 em{font-style:normal;margin-left:38vw}.work-contact{position:absolute;left:clamp(24px,7vw,100px);bottom:15vh;z-index:3;font-size:clamp(1.1rem,2vw,1.8rem);font-weight:900}.work-contact p{color:var(--lav);max-width:480px}.work img{position:absolute;right:4vw;bottom:0;width:min(28vw,370px);height:52vh;object-fit:cover;z-index:2;box-shadow:var(--shadow)}
 .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:120;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 18px 38px rgba(0,0,0,.28)}.whatsapp-float svg{width:36px;height:36px;fill:currentColor}.footer{background:#151515;color:#fff;padding:24px;text-align:center;font-weight:800}
-@media (max-width:850px){.topbar{align-items:flex-start}.brand span:last-child{display:none}.top-actions{gap:6px}.top-btn{padding:9px 10px;font-size:.82rem}.pdf-page{min-height:auto;padding:54px 18px}.hero{min-height:82svh}.hero-title{justify-self:start;text-align:left;margin-top:35svh}.hero-title h1{font-size:28vw}.hero-cta{position:relative;left:auto;bottom:auto;display:inline-flex;margin-top:18px}.about,.beliefs,.course,.availability{display:block}.about-title h2,.course h2,.feedback-page h2,.availability-title,.work h2{font-size:22vw}.star-one{left:auto;right:-12vw;top:10px}.about-copy{margin:22px 0}.about-collage{min-height:560px}.photo.room{right:-28px;width:86vw;height:230px}.photo.isa{right:0;bottom:0;width:70vw;height:300px}.photo.desk{left:-18px;bottom:110px;width:50vw;height:210px}.thats-me{right:22vw;bottom:325px}.beliefs h2{font-size:24vw;margin-bottom:28px}.belief-text{font-size:1.25rem}.quote-card{margin-top:24px}.course-media{min-height:340px}.circle.big{width:76vw}.circle.small{width:47vw;right:0;bottom:0}.yellow-block{width:140px;height:230px;left:34%}.course-copy,.course-side{font-size:1.15rem}.method-grid,.feedback-grid,.contact-actions,.feedback-preview{grid-template-columns:1fr}.feedback-page{padding-bottom:110px}.feedback-page h2{font-size:23vw}.feedback-preview{gap:18px}.feedback-preview img{height:260px}.feedback-open,.feedback-insta{position:relative;left:auto;right:auto;bottom:auto;margin:18px 8px 0 0;display:inline-flex}.availability-title{text-align:left;font-size:23vw;margin-top:42px}.availability:after{width:33vw}.work{min-height:720px}.work:before{inset:0 0 0 44%}.work h2{font-size:24vw}.work h2 span,.work h2 em{margin-left:0}.work-contact{left:18px;bottom:32px}.work img{right:0;width:50vw;height:250px}.whatsapp-float{width:56px;height:56px}.reveal-inner h2{font-size:20vw}}
-
-/* Ajustes pedidos: no celular removemos o título gigante de availability/cost para no superponer el WhatsApp */
-.feedback-grid-paired{grid-template-columns:repeat(3,minmax(0,1fr))}
-.feedback-card-pair{position:relative;overflow:hidden;min-height:430px}
-.feedback-card-pair .feedback-photo{height:260px;width:100%;object-fit:cover}
-.feedback-card-pair .feedback-shot{height:auto;width:82%;max-height:150px;object-fit:contain;background:#050505;margin:-44px auto 0;position:relative;z-index:2;box-shadow:0 16px 38px rgba(0,0,0,.28);border-radius:10px}
-.feedback-card-pair figcaption{font-size:1rem;line-height:1.25}
 @media (max-width:850px){
 
   .topbar{
     align-items:flex-start;
+    gap:10px;
+    padding:12px 14px;
   }
 
   .brand span:last-child{
@@ -44,12 +38,180 @@
   }
 
   .top-actions{
-    gap:6px;
+    width:100%!important;
+    display:flex!important;
+    justify-content:flex-end!important;
+    flex-wrap:wrap!important;
+    gap:6px!important;
   }
 
   .top-btn{
-    padding:9px 10px;
-    font-size:.82rem;
+    padding:8px 10px!important;
+    font-size:.74rem!important;
+  }
+
+  .language-switcher{
+    position:relative!important;
+  }
+
+  .language-menu{
+    right:0!important;
+    left:auto!important;
+    min-width:140px!important;
+    max-width:78vw!important;
+  }
+
+  .pdf-page{
+    min-height:auto;
+    padding:54px 18px;
+  }
+
+  .hero{
+    min-height:82svh;
+  }
+
+  .hero-title{
+    justify-self:start;
+    text-align:left;
+    margin-top:35svh;
+  }
+
+  .hero-title h1{
+    font-size:28vw;
+  }
+
+  .hero-cta{
+    position:relative;
+    left:auto;
+    bottom:auto;
+    display:inline-flex;
+    margin-top:18px;
+  }
+
+  .about,
+  .beliefs,
+  .course,
+  .availability{
+    display:block;
+  }
+
+  .about-title h2,
+  .course h2,
+  .feedback-page h2,
+  .availability-title,
+  .work h2{
+    font-size:22vw;
+  }
+
+  .star-one{
+    left:auto;
+    right:-12vw;
+    top:10px;
+  }
+
+  .about-copy{
+    margin:22px 0;
+  }
+
+  .about-collage{
+    min-height:560px;
+  }
+
+  .photo.room{
+    right:-28px;
+    width:86vw;
+    height:230px;
+  }
+
+  .photo.isa{
+    right:0;
+    bottom:0;
+    width:70vw;
+    height:300px;
+  }
+
+  .photo.desk{
+    left:-18px;
+    bottom:110px;
+    width:50vw;
+    height:210px;
+  }
+
+  .thats-me{
+    right:22vw;
+    bottom:325px;
+  }
+
+  .beliefs h2{
+    font-size:24vw;
+    margin-bottom:28px;
+  }
+
+  .belief-text{
+    font-size:1.25rem;
+  }
+
+  .quote-card{
+    margin-top:24px;
+  }
+
+  .course-media{
+    min-height:340px;
+  }
+
+  .circle.big{
+    width:76vw;
+  }
+
+  .circle.small{
+    width:47vw;
+    right:0;
+    bottom:0;
+  }
+
+  .yellow-block{
+    width:140px;
+    height:230px;
+    left:34%;
+  }
+
+  .course-copy,
+  .course-side{
+    font-size:1.15rem;
+  }
+
+  .method-grid,
+  .feedback-grid,
+  .contact-actions,
+  .feedback-preview,
+  .feedback-grid-paired{
+    grid-template-columns:1fr;
+  }
+
+  .feedback-page{
+    padding-bottom:110px;
+  }
+
+  .feedback-page h2{
+    font-size:23vw;
+  }
+
+  .feedback-preview{
+    gap:18px;
+  }
+
+  .feedback-preview img{
+    height:260px;
+  }
+
+  .feedback-open,
+  .feedback-insta{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin:18px 8px 0 0;
+    display:inline-flex;
   }
 
   .availability-title{
@@ -74,10 +236,6 @@
     max-width:68vw;
   }
 
-  .feedback-grid-paired{
-    grid-template-columns:1fr;
-  }
-
   .feedback-card-pair{
     min-height:auto;
   }
@@ -93,60 +251,71 @@
   }
 
   .work{
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:flex-start!important;
-  gap:24px!important;
-  overflow:hidden!important;
-  min-height:auto!important;
-  padding-bottom:90px!important;
-}
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:24px!important;
+    overflow:hidden!important;
+    min-height:auto!important;
+    padding-bottom:90px!important;
+  }
 
-.work:before{
-  inset:0!important;
-  opacity:.15!important;
-}
+  .work:before{
+    inset:0!important;
+    opacity:.15!important;
+  }
 
-.work h2{
-  width:100%!important;
-  position:relative!important;
-  z-index:2!important;
-  font-size:clamp(3rem,16vw,5rem)!important;
-  line-height:.82!important;
-  margin:0 0 20px!important;
-  word-break:break-word!important;
+  .work h2{
+    width:100%!important;
+    position:relative!important;
+    z-index:2!important;
+    font-size:clamp(3rem,16vw,5rem)!important;
+    line-height:.82!important;
+    margin:0 0 20px!important;
+    word-break:break-word!important;
 
-  background:rgba(255,248,238,.88)!important;
-  padding:18px 16px!important;
-  border-radius:22px!important;
-  backdrop-filter:blur(6px)!important;
-  box-shadow:0 10px 30px rgba(0,0,0,.08)!important;
+    background:rgba(255,248,238,.88)!important;
+    padding:18px 16px!important;
+    border-radius:22px!important;
+    backdrop-filter:blur(6px)!important;
+    box-shadow:0 10px 30px rgba(0,0,0,.08)!important;
 
-  display:inline-block!important;
-}
+    display:inline-block!important;
+  }
 
-.work h2 span,
-.work h2 em{
-  margin-left:0!important;
-  display:block!important;
-}
+  .work h2 span,
+  .work h2 em{
+    margin-left:0!important;
+    display:block!important;
+  }
 
-.work-contact{
-  position:relative!important;
-  left:auto!important;
-  bottom:auto!important;
-  width:100%!important;
-  z-index:2!important;
-}
+  .work-contact{
+    position:relative!important;
+    left:auto!important;
+    bottom:auto!important;
+    width:100%!important;
+    z-index:2!important;
+  }
 
-.work img{
-  position:relative!important;
-  right:auto!important;
-  bottom:auto!important;
-  width:100%!important;
-  max-width:100%!important;
-  height:auto!important;
-  display:block!important;
-  margin-top:20px!important;
-  z-index:1!important;
+  .work img{
+    position:relative!important;
+    right:auto!important;
+    bottom:auto!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    display:block!important;
+    margin-top:20px!important;
+    z-index:1!important;
+  }
+
+  .whatsapp-float{
+    width:56px;
+    height:56px;
+  }
+
+  .reveal-inner h2{
+    font-size:20vw;
+  }
+
 }
