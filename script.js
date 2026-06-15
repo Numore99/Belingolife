@@ -1,5 +1,4 @@
 const WHATSAPP_NUMBER = "5511970321742";
-const GMAIL_ADDRESS = "contacto@belingolife.com";
 const INSTAGRAM_URL = "https://www.instagram.com/belingolife/";
 const STORAGE_KEY = "belingolife-language";
 const DEFAULT_LANGUAGE = "pt-BR";
@@ -44,8 +43,6 @@ const translations = {
     contactText: "Escolha como você quer falar com a belingolife.",
     workQuestion: "Vamos conversar sobre seus objetivos em inglês?",
     whatsappDefault: "Olá! Quero saber mais sobre as aulas de inglês com a teacher Isa.",
-    mailSubject: "Consulta sobre aulas de inglês",
-    mailBody: "Olá! Quero saber mais sobre as aulas de inglês.",
     levels: {
       beginner: {
         label: "Iniciante",
@@ -106,8 +103,6 @@ const translations = {
     contactText: "Escoge cómo quieres hablar con belingolife.",
     workQuestion: "Hablemos sobre tus objetivos con el inglés.",
     whatsappDefault: "Hola! Quiero saber más sobre las clases de inglés con teacher Isa.",
-    mailSubject: "Consulta sobre clases de inglés",
-    mailBody: "Hola! Quiero saber más sobre las clases de inglés.",
     levels: {
       beginner: {
         label: "Principiante",
@@ -168,8 +163,6 @@ const translations = {
     contactText: "Choisissez comment vous voulez parler avec belingolife.",
     workQuestion: "Parlons de vos objectifs en anglais.",
     whatsappDefault: "Bonjour! Je voudrais en savoir plus sur les cours d'anglais avec teacher Isa.",
-    mailSubject: "Question sur les cours d'anglais",
-    mailBody: "Bonjour! Je voudrais en savoir plus sur les cours d'anglais.",
     levels: {
       beginner: {
         label: "Débutant",
@@ -230,8 +223,6 @@ const translations = {
     contactText: "belingolife와 어떤 방식으로 이야기할지 선택해 주세요.",
     workQuestion: "영어 목표에 대해 함께 이야기해 볼까요?",
     whatsappDefault: "안녕하세요! teacher Isa의 영어 수업에 대해 더 알고 싶습니다.",
-    mailSubject: "영어 수업 문의",
-    mailBody: "안녕하세요! 영어 수업에 대해 더 알고 싶습니다.",
     levels: {
       beginner: {
         label: "초급",
@@ -292,8 +283,6 @@ const translations = {
     contactText: "选择你想用哪种方式联系 belingolife。",
     workQuestion: "让我们聊聊你的英语目标。",
     whatsappDefault: "你好！我想了解 teacher Isa 的英语课程。",
-    mailSubject: "英语课程咨询",
-    mailBody: "你好！我想了解更多英语课程信息。",
     levels: {
       beginner: {
         label: "初级",
@@ -354,8 +343,6 @@ const translations = {
     contactText: "belingolife への連絡方法を選んでください。",
     workQuestion: "あなたの英語の目標について話しましょう。",
     whatsappDefault: "こんにちは！teacher Isa の英語レッスンについて知りたいです。",
-    mailSubject: "英語レッスンについての問い合わせ",
-    mailBody: "こんにちは！英語レッスンについてもっと知りたいです。",
     levels: {
       beginner: {
         label: "初級",
@@ -403,10 +390,6 @@ function buildWhatsAppUrl(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-function buildMailUrl(subject, body) {
-  return `mailto:${GMAIL_ADDRESS}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-
 function applyLanguage(lang) {
   if (!translations[lang]) return;
 
@@ -443,9 +426,6 @@ function updateLinks() {
   document.querySelectorAll("[data-instagram-link], #contact-instagram-link").forEach((link) => {
     link.href = INSTAGRAM_URL;
   });
-
-  const gmailLink = document.getElementById("gmail-link");
-  if (gmailLink) gmailLink.href = buildMailUrl(text.mailSubject, text.mailBody);
 }
 
 function togglePanel(id) {
