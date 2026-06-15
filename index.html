@@ -1,224 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>belingolife | Inglês online</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>belingolife | English with Isa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Navegação principal" data-i18n-aria="navAria">
-      <a class="brand" href="#inicio" aria-label="Ir ao início" data-i18n-aria="brandAria">
-        <span class="brand-mark">BL</span>
-        <span>belingolife</span>
-      </a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="belingolife home">
+      <span class="brand-dot">english</span>
+      <span>with teacher Isa.</span>
+    </a>
 
-      <div class="nav-actions">
-        <div class="language-switcher">
-          <button class="language-toggle" id="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu">
-            <span class="flag flag-br" id="current-flag" aria-hidden="true"></span>
-            <span id="current-language">PT</span>
-            <span class="language-arrow" aria-hidden="true">▾</span>
-          </button>
-
-          <div class="language-menu" id="language-menu" role="menu" aria-label="Selecionar idioma" data-i18n-aria="languageMenuAria">
-            <button type="button" role="menuitem" data-lang="pt-BR"><span class="flag flag-br" aria-hidden="true"></span><span>Português</span></button>
-            <button type="button" role="menuitem" data-lang="fr-FR"><span class="flag flag-fr" aria-hidden="true"></span><span>Français</span></button>
-            <button type="button" role="menuitem" data-lang="es-ES"><span class="flag flag-es" aria-hidden="true"></span><span>Español</span></button>
-            <button type="button" role="menuitem" data-lang="ko-KR"><span class="flag flag-kr" aria-hidden="true"></span><span>Korean</span></button>
-            <button type="button" role="menuitem" data-lang="zh-CN"><span class="flag flag-cn" aria-hidden="true"></span><span>Chinese</span></button>
-            <button type="button" role="menuitem" data-lang="ja-JP"><span class="flag flag-jp" aria-hidden="true"></span><span>Japanese</span></button>
-          </div>
-        </div>
-
-        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-i18n-aria="menuAria">
-          <span></span><span></span><span></span>
+    <nav class="top-actions" aria-label="Navegação principal">
+      <div class="language-switcher">
+        <button class="top-btn language-toggle" id="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu">
+          <span id="current-language">PT</span><span aria-hidden="true">▾</span>
         </button>
+        <div class="language-menu" id="language-menu" role="menu" aria-label="Selecionar idioma">
+          <button type="button" data-lang="pt-BR">Português</button>
+          <button type="button" data-lang="es-ES">Español</button>
+          <button type="button" data-lang="fr-FR">Français</button>
+          <button type="button" data-lang="ko-KR">Korean</button>
+          <button type="button" data-lang="zh-CN">Chinese</button>
+          <button type="button" data-lang="ja-JP">Japanese</button>
+        </div>
       </div>
-
-      <div class="nav-links">
-        <a href="#cursos" data-i18n="navCourses">Níveis</a>
-        <a href="#metodo" data-i18n="navTrust">Método</a>
-        <a href="#depoimentos" data-i18n="navTestimonials">Resultados</a>
-        <a href="#consulta" data-i18n="navContact">Contato</a>
-      </div>
+      <button class="top-btn panel-toggle" type="button" data-target="cursos" aria-expanded="false" data-i18n="navLevels">Níveis</button>
+      <button class="top-btn panel-toggle" type="button" data-target="metodo" aria-expanded="false" data-i18n="navMethod">Métodos</button>
+      <button class="top-btn panel-toggle" type="button" data-target="depoimentos" aria-expanded="false" data-i18n="navFeedback">Feedbacks</button>
+      <button class="top-btn panel-toggle" type="button" data-target="consulta" aria-expanded="false" data-i18n="navContact">Contato</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero section" id="inicio">
-      <div class="hero-copy">
-        <div class="hero-study-visual" aria-hidden="true">
-          <span class="study-desk"></span>
-          <span class="study-book"></span>
-          <span class="study-notebook"></span>
-          <span class="study-pencil"></span>
-        </div>
-        <p class="eyebrow" data-i18n="heroEyebrow">Academia online internacional</p>
-        <h1 data-i18n="heroTitle">Inglês online com direção, prática e acompanhamento real.</h1>
-        <p class="hero-text" data-i18n="heroText">Aulas para quem quer falar melhor, estudar fora, trabalhar em inglês ou ganhar segurança em conversas reais.</p>
-        <div class="hero-actions">
-          <a class="button primary" id="hero-whatsapp" href="#consulta" data-i18n="heroPrimary">Falar no WhatsApp</a>
-          <button class="button secondary" id="levels-toggle" type="button" aria-expanded="false" aria-controls="cursos" data-i18n="heroSecondary">Ver níveis</button>
-          <button class="button secondary" id="method-toggle" type="button" aria-expanded="false" aria-controls="metodo" data-i18n="methodButton">Método</button>
-          <button class="button secondary" id="results-toggle" type="button" aria-expanded="false" aria-controls="depoimentos" data-i18n="resultsButton">Resultados</button>
-        </div>
+    <section class="pdf-page hero" id="inicio">
+      <img class="hero-photo" src="assets/whatsapp-image-2026-06-15-at-13.09.45.jpeg" alt="Mesa com livros e café" />
+      <div class="hero-shade"></div>
+      <div class="hero-title">
+        <p class="micro" data-i18n="heroMicro">online classes</p>
+        <h1>english</h1>
+        <p data-i18n="heroSub">with teacher Isa.</p>
       </div>
-
-      <aside class="hero-panel" aria-label="Resumo do método" data-i18n-aria="methodAria">
-        <span class="panel-label" data-i18n="methodLabel">Estudo guiado</span>
-        <strong data-i18n="methodTitle">Diagnóstico, prática conversacional e evolução por nível.</strong>
-        <div class="metric-grid">
-          <span><b>1:1</b><small data-i18n="metricOne">aulas online</small></span>
-          <span><b>15m</b><small data-i18n="metricTwo">prática diária</small></span>
-          <span><b>100%</b><small data-i18n="metricThree">foco no aluno</small></span>
-        </div>
-      </aside>
+      <a class="hero-cta" id="hero-whatsapp" href="#" target="_blank" rel="noopener" data-i18n="heroCta">Agendar aula experimental</a>
     </section>
 
-    <section class="levels-section reveal-section section" id="cursos" aria-hidden="true">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="levelsEyebrow">Níveis</p>
-        <h2 data-i18n="levelsTitle">Escolha seu ponto de partida</h2>
+    <section class="pdf-page about" id="sobre">
+      <a class="insta-chip" href="#" target="_blank" rel="noopener" data-instagram-link aria-label="Instagram">◎ Instagram</a>
+      <div class="star star-one" aria-hidden="true"></div>
+      <div class="about-title">
+        <h2>about<br>me</h2>
       </div>
-      <div class="level-tabs" role="tablist" aria-label="Níveis de inglês" data-i18n-aria="levelsAria">
-        <button class="tab active" type="button" data-level="beginner">Iniciante</button>
-        <button class="tab" type="button" data-level="intermediate">Intermediário</button>
-        <button class="tab" type="button" data-level="advanced">Avançado</button>
-      </div>
-      <article class="level-card">
-        <span class="card-tag" id="level-tag">Iniciante</span>
-        <h3 id="course-title">Base para começar a falar</h3>
-        <p id="course-description">Frases essenciais, pronúncia e estrutura para conversas simples.</p>
-        <div class="level-example">
-          <span class="card-tag" id="level-example-label">Exemplo</span>
-          <p id="level-example">"My name is Ana. I like coffee."</p>
+      <div class="about-copy">
+        <p class="bold" data-i18n="aboutBold">Eu estudo idiomas já por 10 anos e o Inglês é um deles!</p>
+        <div class="yellow-note">
+          <p data-i18n="aboutText">Minhas séries favoritas são Friends, The Office e Brooklyn 99. Elas me ajudaram muuuuito a aprender o Inglês de forma natural! Eu uso muito essas séries durante as aulas.</p>
+          <span aria-hidden="true">←</span>
         </div>
-      </article>
+      </div>
+      <div class="about-collage">
+        <img class="photo room" src="assets/cora-pursley-dupe-1.jpeg" alt="Livros empilhados" />
+        <img class="photo isa" src="assets/cora-pursley-dupe.jpeg" alt="Estudo com notebook e anotações" />
+        <img class="photo desk" src="assets/logan-thomas-dupe.jpeg" alt="Caderno e livro" />
+        <span class="thats-me">that's me</span>
+      </div>
     </section>
 
-    <section class="method-section reveal-section section" id="metodo" aria-hidden="true">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="methodSectionEyebrow">Método</p>
-        <h2 data-i18n="methodSectionTitle">Métodos de estudo usados nas aulas.</h2>
+    <section class="pdf-page beliefs" id="beliefs">
+      <h2>my<br>beliefs</h2>
+      <div class="belief-text">
+        <p data-i18n="beliefOne">A fluência é um <strong>processo</strong>, não um destino!</p>
+        <p data-i18n="beliefTwo">Todos os idiomas são complexos, extensos e envolvem muito mais do que apenas palavras.</p>
+        <p data-i18n="beliefThree">Aprender um idioma é um processo contínuo. Nosso objetivo é conseguir nos <strong>comunicar</strong> de forma confortável e <strong>natural!</strong></p>
       </div>
-      <div class="method-grid">
-        <article class="method-card">
-          <div class="method-visual recall" aria-hidden="true"><span></span></div>
-          <span class="card-tag" data-i18n="methodOneTag">Revisão ativa</span>
-          <h3 data-i18n="methodOneTitle">Active recall</h3>
-          <p data-i18n="methodOneText">Resgate informações da memória sem consultar o material primeiro.</p>
+      <figure class="quote-card">
+        <img src="assets/avery-estebanes-dupe.jpeg" alt="Livro aberto na grama" />
+        <figcaption>It’s not hard,<br>it’s just new.</figcaption>
+      </figure>
+    </section>
+
+    <section class="pdf-page course" id="curso">
+      <div class="course-media">
+        <img class="circle big" src="assets/whatsapp-image-2026-06-15-at-13.09.45.jpeg" alt="Livros e café" />
+        <img class="circle small" src="assets/cora-pursley-dupe.jpeg" alt="Mesa de estudo" />
+      </div>
+      <div class="course-title-block">
+        <span class="yellow-block" aria-hidden="true"></span>
+        <h2>about the<br>course</h2>
+      </div>
+      <div class="course-copy">
+        <p data-i18n="courseOne">As aulas são realizadas pelo Google Meet e têm duração de 1 hora.</p>
+        <p data-i18n="courseTwo">Como material, usaremos os livros da série <strong>American English File</strong>. Eu disponibilizo o material, então você não necessariamente precisa comprar a versão física.</p>
+        <p data-i18n="courseThree">Os assuntos são adaptados para a sua necessidade e objetivo!</p>
+        <p class="soft-note" data-i18n="courseFour">Por enquanto não há emissão de certificado.</p>
+      </div>
+      <p class="course-side" data-i18n="courseSide">Nas aulas para crianças/adolescentes, usaremos materiais adaptados por idade e objetivo.</p>
+    </section>
+
+    <section class="reveal-section" id="cursos" aria-hidden="true">
+      <div class="reveal-inner levels-panel">
+        <h2 data-i18n="levelsTitle">Níveis</h2>
+        <div class="level-tabs" role="tablist" aria-label="Níveis de inglês">
+          <button class="tab active" type="button" data-level="beginner">A1/A2</button>
+          <button class="tab" type="button" data-level="intermediate">B1/B2</button>
+          <button class="tab" type="button" data-level="advanced">C1+</button>
+        </div>
+        <article class="level-card">
+          <span id="level-tag">Iniciante</span>
+          <h3 id="course-title">Base para começar a falar</h3>
+          <p id="course-description">Frases essenciais, pronúncia e estrutura para conversas simples.</p>
+          <p id="level-example">“My name is Ana. I like coffee.”</p>
         </article>
-        <article class="method-card">
-          <div class="method-visual spaced" aria-hidden="true"><span></span></div>
-          <span class="card-tag" data-i18n="methodTwoTag">SRS</span>
-          <h3 data-i18n="methodTwoTitle">Spaced repetition</h3>
-          <p data-i18n="methodTwoText">Revise em intervalos crescentes para memorizar vocabulário e estruturas.</p>
-        </article>
-        <article class="method-card">
-          <div class="method-visual input" aria-hidden="true"><span></span></div>
-          <span class="card-tag" data-i18n="methodThreeTag">Input natural</span>
-          <h3 data-i18n="methodThreeTitle">Comprehensible input</h3>
-          <p data-i18n="methodThreeText">Use vídeos, vlogs e situações reais para adquirir vocabulário com contexto.</p>
-        </article>
       </div>
     </section>
 
-    <section class="section trust" id="confianca">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="trustEyebrow">Confiança</p>
-        <h2 data-i18n="trustTitle">Uma experiência pensada para evolução constante.</h2>
-      </div>
-      <div class="trust-grid">
-        <article><span>01</span><h3 data-i18n="trustOneTitle">Clases online</h3><p data-i18n="trustOneText">Acompanhe de qualquer lugar com rotina flexível.</p></article>
-        <article><span>02</span><h3 data-i18n="trustTwoTitle">Profesores preparados</h3><p data-i18n="trustTwoText">Aulas conduzidas com método, clareza e correção.</p></article>
-        <article><span>03</span><h3 data-i18n="trustThreeTitle">Práctica conversacional</h3><p data-i18n="trustThreeText">Foco em situações reais, fala e confiança.</p></article>
-        <article><span>04</span><h3 data-i18n="trustFourTitle">Plan por nivel</h3><p data-i18n="trustFourText">Cada aluno segue uma rota de evolução clara.</p></article>
-      </div>
-    </section>
-
-    <section class="practice section" id="pratica">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="practiceEyebrow">Prática rápida</p>
-        <h2 data-i18n="practiceTitle">Teste uma pergunta</h2>
-      </div>
-      <article class="quiz-box">
-        <div class="quiz-top"><span class="card-tag" data-i18n="quizLabel">Mini test</span><span id="score">0 / 3</span></div>
-        <h3 id="question">Carregando pergunta...</h3>
-        <div class="answers" id="answers"></div>
-        <p class="feedback" id="feedback" aria-live="polite"></p>
-        <button class="button secondary" type="button" id="next-question" data-i18n="nextQuestion">Próxima</button>
-      </article>
-    </section>
-
-    <section class="section testimonials reveal-section" id="depoimentos" aria-hidden="true">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="testimonialsEyebrow">Resultados</p>
-        <h2 data-i18n="testimonialsTitle">Alunos que ganharam segurança para falar.</h2>
-      </div>
-      <div class="testimonial-grid">
-        <article><p data-i18n="testimonialOneText">As aulas me ajudaram a destravar em reuniões internacionais.</p><strong data-i18n="testimonialOneName">Marina Costa</strong><span data-i18n="testimonialOneMeta">Brasil · Trabalho</span></article>
-        <article><p data-i18n="testimonialTwoText">Gostei do plano por nível. Eu sabia exatamente o que estudar.</p><strong data-i18n="testimonialTwoName">Lucas Meyer</strong><span data-i18n="testimonialTwoMeta">França · Viagem</span></article>
-        <article><p data-i18n="testimonialThreeText">A prática conversacional foi o que mais mudou minha confiança.</p><strong data-i18n="testimonialThreeName">Sofia Park</strong><span data-i18n="testimonialThreeMeta">Coreia · Conversação</span></article>
-      </div>
-    </section>
-
-    <section class="section instagram" id="instagram">
-      <div class="section-heading inline-heading">
-        <div>
-          <p class="eyebrow" data-i18n="instagramEyebrow">Instagram</p>
-          <h2 data-i18n="instagramTitle">Conteúdo de estudo e bastidores das aulas.</h2>
+    <section class="reveal-section" id="metodo" aria-hidden="true">
+      <div class="reveal-inner methods-panel">
+        <h2 data-i18n="methodPanelTitle">Métodos</h2>
+        <div class="method-grid">
+          <article><strong>01</strong><h3 data-i18n="methodOneTitle">Active recall</h3><p data-i18n="methodOneText">Resgatar informações da memória antes de consultar o material.</p></article>
+          <article><strong>02</strong><h3 data-i18n="methodTwoTitle">Spaced repetition</h3><p data-i18n="methodTwoText">Revisões inteligentes em intervalos para fixar vocabulário.</p></article>
+          <article><strong>03</strong><h3 data-i18n="methodThreeTitle">Input natural</h3><p data-i18n="methodThreeText">Séries, vídeos e situações reais para aprender com contexto.</p></article>
         </div>
-        <a class="button secondary" id="instagram-link" href="#" target="_blank" rel="noopener" data-i18n="instagramButton">Ver Instagram</a>
-      </div>
-      <div class="instagram-grid" aria-label="Instagram preview" data-i18n-aria="instagramAria">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </section>
 
-    <section class="section contact" id="consulta">
-      <div class="contact-copy">
-        <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
-        <h2 data-i18n="contactTitle">Escolha como quer falar conosco.</h2>
-        <p data-i18n="contactText">Envie sua consulta pelo canal que preferir.</p>
+    <section class="pdf-page feedback-page">
+      <a class="insta-chip feedback-insta" href="#" target="_blank" rel="noopener" data-instagram-link aria-label="Instagram">◎ Instagram</a>
+      <h2>feedback</h2>
+      <div class="feedback-preview">
+        <img src="assets/whatsapp-image-2024-12-04-at-20.40.49.jpeg" alt="Feedback de aluno" />
+        <img src="assets/emma-cancilla-dupe.jpeg" alt="Televisores com imagem vintage" />
       </div>
+      <button class="feedback-open panel-toggle" type="button" data-target="depoimentos" aria-expanded="false" data-i18n="feedbackOpen">Ver feedbacks</button>
+    </section>
 
-      <div class="contact-channels">
-        <a class="contact-card" id="gmail-link" href="#">
-          <span class="channel-icon">G</span>
-          <h3 data-i18n="gmailTitle">Gmail</h3>
-          <p data-i18n="gmailText">Envie uma mensagem com sua dúvida ou objetivo.</p>
-          <strong data-i18n="gmailButton">Enviar e-mail</strong>
-        </a>
-        <a class="contact-card" id="contact-instagram-link" href="#" target="_blank" rel="noopener">
-          <span class="channel-icon">IG</span>
-          <h3 data-i18n="contactInstagramTitle">Instagram</h3>
-          <p data-i18n="contactInstagramText">Acompanhe conteúdos e bastidores das aulas.</p>
-          <strong data-i18n="contactInstagramButton">Ver perfil</strong>
-        </a>
-        <a class="contact-card featured" id="contact-whatsapp-link" href="#" target="_blank" rel="noopener">
-          <span class="channel-icon">WA</span>
-          <h3 data-i18n="contactWhatsappTitle">WhatsApp</h3>
-          <p data-i18n="contactWhatsappText">Envie uma mensagem automática para iniciar a conversa.</p>
-          <strong data-i18n="contactWhatsappButton">Falar agora</strong>
-        </a>
+    <section class="reveal-section" id="depoimentos" aria-hidden="true">
+      <div class="reveal-inner feedback-panel">
+        <h2 data-i18n="feedbackTitle">Feedbacks reais</h2>
+        <div class="feedback-grid feedback-grid-paired">
+          <figure class="feedback-card-pair">
+            <img class="feedback-photo" src="assets/cora-pursley-dupe.jpeg" alt="Mesa de estudos">
+            <img class="feedback-shot" src="assets/feedback-bubbles.png" alt="Feedback de aluno por mensagem">
+            <figcaption data-i18n="feedbackOne">“Mas vc é a melhor. Vc é uma professora incrível.”</figcaption>
+          </figure>
+          <figure class="feedback-card-pair">
+            <img class="feedback-photo" src="assets/avery-estebanes-dupe.jpeg" alt="Livros e leitura">
+            <img class="feedback-shot" src="assets/feedback-teacher.png" alt="Feedback sobre as aulas">
+        
+          </figure>
+          <figure class="feedback-card-pair">
+            <img class="feedback-photo" src="assets/whatsapp-image-2024-12-04-at-20.40.49.jpeg" alt="Feedback por mensagem">
+            <img class="feedback-shot" src="assets/whatsapp-image-2026-06-15-at-13.09.45.jpeg" alt="Mensagem de aluno">
+            <figcaption data-i18n="feedbackThree">Feedbacks reais dos alunos.</figcaption>
+          </figure>
+        </div>
       </div>
+    </section>
+
+    <section class="pdf-page availability" id="agenda">
+      <div class="availability-copy">
+        <h3 data-i18n="availabilityTitle">Horários disponíveis:</h3>
+        <p data-i18n="availabilityText">Consulte os horários atuais pelo WhatsApp.</p>
+        <h3 data-i18n="investmentTitle">Investimento:</h3>
+        <p data-i18n="investmentText">Planos e disponibilidade sob consulta.</p>
+      </div>
+      <div class="availability-title">
+        <span>availability</span>
+        <strong>cost</strong>
+      </div>
+    </section>
+
+    <section class="reveal-section" id="consulta" aria-hidden="true">
+      <div class="reveal-inner contact-panel">
+        <h2 data-i18n="contactTitle">Contato</h2>
+        <p data-i18n="contactText">Vamos agendar uma aula experimental, sem custo?</p>
+        <div class="contact-actions">
+          <a class="contact-card" id="contact-whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="contact-card" id="contact-instagram-link" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a class="contact-card" id="gmail-link" href="#">Gmail</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pdf-page work" id="work">
+      <div class="star star-two" aria-hidden="true"></div>
+      <h2>let’s<br><span>work</span><br><em>together</em></h2>
+      <div class="work-contact">
+        <p data-i18n="workQuestion">Vamos agendar uma aula experimental, sem custo?</p>
+        <a id="work-whatsapp" href="#" target="_blank" rel="noopener">Contact: +55 (11) 9 7032-1742</a>
+      </div>
+      <img src="assets/avery-estebanes-dupe.jpeg" alt="Livro aberto ao ar livre" />
     </section>
   </main>
 
-  <a class="whatsapp-float" id="whatsapp-float" href="#" target="_blank" rel="noopener" aria-label="Abrir WhatsApp" data-i18n-aria="whatsappAria">
+  <a class="whatsapp-float" id="whatsapp-float" href="#" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.2A12.7 12.7 0 0 0 5.1 22.5L3.5 28.8l6.4-1.7A12.7 12.7 0 1 0 16 3.2Zm0 2.4a10.3 10.3 0 1 1 0 20.6 10.6 10.6 0 0 1-5.2-1.4l-.4-.2-3.4.9.9-3.3-.2-.4A10.3 10.3 0 0 1 16 5.6Zm-4.5 5.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.2 5 4.4 2.5 1 3 .8 3.6.7.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.7-.4l-2.1-1c-.3-.1-.6-.2-.8.2l-.9 1.1c-.2.3-.4.3-.7.1-.4-.2-1.4-.5-2.6-1.6-1-1-1.6-2.1-1.8-2.5-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-.9-2.2c-.2-.6-.5-.6-.7-.6Z"></path></svg>
   </a>
 
-  <footer class="footer">
-    <p>belingolife</p>
-    <p data-i18n="footerText">Inglês online para objetivos reais.</p>
-  </footer>
-
+  <footer class="footer">belingolife · english with teacher Isa.</footer>
   <script src="script.js"></script>
 </body>
 </html>
