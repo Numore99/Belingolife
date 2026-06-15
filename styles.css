@@ -34,12 +34,100 @@
 .feedback-card-pair .feedback-shot{height:auto;width:82%;max-height:150px;object-fit:contain;background:#050505;margin:-44px auto 0;position:relative;z-index:2;box-shadow:0 16px 38px rgba(0,0,0,.28);border-radius:10px}
 .feedback-card-pair figcaption{font-size:1rem;line-height:1.25}
 @media (max-width:850px){
-  .availability-title{display:none!important}
-  .availability{padding-bottom:92px;min-height:auto}
-  .availability:after{right:18px;width:34vw;height:280px;opacity:.95}
-  .availability-copy{position:relative;z-index:2;max-width:68vw}
-  .feedback-grid-paired{grid-template-columns:1fr}
-  .feedback-card-pair{min-height:auto}
-  .feedback-card-pair .feedback-photo{height:245px}
-  .feedback-card-pair .feedback-shot{width:88%;max-height:140px;margin-top:-34px}
+
+  .topbar{
+    align-items:flex-start;
+  }
+
+  .brand span:last-child{
+    display:none;
+  }
+
+  .top-actions{
+    gap:6px;
+  }
+
+  .top-btn{
+    padding:9px 10px;
+    font-size:.82rem;
+  }
+
+  .availability-title{
+    display:none!important;
+  }
+
+  .availability{
+    padding-bottom:92px;
+    min-height:auto;
+  }
+
+  .availability:after{
+    right:18px;
+    width:34vw;
+    height:280px;
+    opacity:.95;
+  }
+
+  .availability-copy{
+    position:relative;
+    z-index:2;
+    max-width:68vw;
+  }
+
+  .feedback-grid-paired{
+    grid-template-columns:1fr;
+  }
+
+  .feedback-card-pair{
+    min-height:auto;
+  }
+
+  .feedback-card-pair .feedback-photo{
+    height:245px;
+  }
+
+  .feedback-card-pair .feedback-shot{
+    width:88%;
+    max-height:140px;
+    margin-top:-34px;
+  }
+
+  .work{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:24px!important;
+    overflow:hidden!important;
+    min-height:auto!important;
+    padding-bottom:90px!important;
+  }
+
+  .work h2{
+    width:100%!important;
+    position:relative!important;
+    z-index:2!important;
+    font-size:clamp(3rem,16vw,5rem)!important;
+    line-height:.82!important;
+    margin:0!important;
+    word-break:break-word!important;
+  }
+
+  .work-photo,
+  .work img{
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    display:block!important;
+    margin-top:10px!important;
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  .work-copy,
+  .work-text{
+    width:100%!important;
+    position:relative!important;
+    z-index:2!important;
+  }
+
 }
