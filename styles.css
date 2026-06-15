@@ -27,314 +27,61 @@
 .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:120;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 18px 38px rgba(0,0,0,.28)}.whatsapp-float svg{width:36px;height:36px;fill:currentColor}.footer{background:#151515;color:#fff;padding:24px;text-align:center;font-weight:800}
 @media (max-width:850px){
 
-  html,
-  body{
-    max-width:100%;
-    overflow-x:hidden;
-  }
-
-  *{
-    box-sizing:border-box;
-  }
-
   .topbar{
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:stretch!important;
-    gap:8px!important;
-    padding:10px 12px!important;
-  }
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  gap:8px!important;
+  padding:10px 12px!important;
+}
 
-  .brand{
-    display:flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    gap:10px!important;
-  }
+.brand{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+}
 
-  .brand span:last-child{
-    display:none!important;
-  }
+.brand span:last-child{
+  display:none!important;
+}
 
-  .top-actions{
-    width:100%!important;
-    display:grid!important;
-    grid-template-columns:repeat(4,1fr)!important;
-    gap:6px!important;
-    align-items:center!important;
-  }
+.top-actions{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:repeat(4,1fr)!important;
+  gap:6px!important;
+  align-items:center!important;
+}
 
-  .top-btn,
-  .language-toggle{
-    width:100%!important;
-    min-width:0!important;
-    padding:8px 4px!important;
-    font-size:.68rem!important;
-    text-align:center!important;
-    justify-content:center!important;
-    border-radius:14px!important;
-  }
+.top-btn,
+.language-toggle{
+  width:100%!important;
+  min-width:0!important;
+  padding:8px 4px!important;
+  font-size:.68rem!important;
+  text-align:center!important;
+  justify-content:center!important;
+  border-radius:14px!important;
+}
 
-  .language-switcher{
-    width:100%!important;
-    min-width:0!important;
-    position:relative!important;
-  }
+.language-switcher{
+  width:100%!important;
+  min-width:0!important;
+  position:relative!important;
+}
 
-  .language-menu{
-    left:0!important;
-    right:auto!important;
-    width:100%!important;
-    min-width:100%!important;
-    max-width:100%!important;
-    box-sizing:border-box!important;
-  }
+.language-menu{
+  left:0!important;
+  right:auto!important;
+  width:100%!important;
+  min-width:100%!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+}
 
-  .language-menu button{
-    width:100%!important;
-    justify-content:flex-start!important;
-    font-size:.8rem!important;
-  }
-
-  .pdf-page{
-    min-height:auto;
-    padding:54px 18px;
-  }
-
-  .hero{
-    min-height:82svh;
-  }
-
-  .hero-title{
-    justify-self:start;
-    text-align:left;
-    margin-top:35svh;
-  }
-
-  .hero-title h1,
-  .about-title h2,
-  .beliefs h2,
-  .course h2,
-  .feedback-page h2,
-  .work h2,
-  .availability-title{
-    font-size:clamp(3rem,16vw,5rem)!important;
-    line-height:.9!important;
-    letter-spacing:-.045em!important;
-    word-spacing:.04em!important;
-    overflow-wrap:break-word!important;
-  }
-
-  .hero-cta{
-    position:relative;
-    left:auto;
-    bottom:auto;
-    display:inline-flex;
-    margin-top:18px;
-  }
-
-  .about,
-  .beliefs,
-  .course,
-  .availability{
-    display:block;
-  }
-
-  .star-one{
-    left:auto;
-    right:-12vw;
-    top:10px;
-  }
-
-  .about-copy{
-    margin:22px 0;
-  }
-
-  .about-collage{
-    min-height:560px;
-  }
-
-  .photo.room{
-    right:-28px;
-    width:86vw;
-    height:230px;
-  }
-
-  .photo.isa{
-    right:0;
-    bottom:0;
-    width:70vw;
-    height:300px;
-  }
-
-  .photo.desk{
-    left:-18px;
-    bottom:110px;
-    width:50vw;
-    height:210px;
-  }
-
-  .thats-me{
-    right:22vw;
-    bottom:325px;
-  }
-
-  .belief-text{
-    font-size:1.25rem;
-  }
-
-  .quote-card{
-    margin-top:24px;
-  }
-
-  .course-media{
-    min-height:340px;
-  }
-
-  .circle.big{
-    width:76vw;
-  }
-
-  .circle.small{
-    width:47vw;
-    right:0;
-    bottom:0;
-  }
-
-  .yellow-block{
-    width:140px;
-    height:230px;
-    left:34%;
-  }
-
-  .course-copy,
-  .course-side{
-    font-size:1.15rem;
-  }
-
-  .method-grid,
-  .feedback-grid,
-  .contact-actions,
-  .feedback-preview,
-  .feedback-grid-paired{
-    grid-template-columns:1fr;
-  }
-
-  .feedback-page{
-    padding-bottom:110px;
-  }
-
-  .feedback-preview{
-    gap:18px;
-  }
-
-  .feedback-preview img{
-    height:260px;
-  }
-
-  .feedback-open,
-  .feedback-insta{
-    position:relative;
-    left:auto;
-    right:auto;
-    bottom:auto;
-    margin:18px 8px 0 0;
-    display:inline-flex;
-  }
-
-  .availability-title{
-    display:none!important;
-  }
-
-  .availability{
-    padding-bottom:92px;
-    min-height:auto;
-  }
-
-  .availability:after{
-    right:18px;
-    width:34vw;
-    height:280px;
-    opacity:.95;
-  }
-
-  .availability-copy{
-    position:relative;
-    z-index:2;
-    max-width:68vw;
-  }
-
-  .feedback-card-pair{
-    min-height:auto;
-  }
-
-  .feedback-card-pair .feedback-photo{
-    height:245px;
-  }
-
-  .feedback-card-pair .feedback-shot{
-    width:88%;
-    max-height:140px;
-    margin-top:-34px;
-  }
-
-  .work{
-    display:flex!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:24px!important;
-    overflow:hidden!important;
-    min-height:auto!important;
-    padding-bottom:90px!important;
-  }
-
-  .work:before{
-    inset:0!important;
-    opacity:.15!important;
-  }
-
-  .work h2{
-    background:rgba(255,248,238,.88)!important;
-    padding:18px 16px!important;
-    border-radius:22px!important;
-    backdrop-filter:blur(6px)!important;
-    box-shadow:0 10px 30px rgba(0,0,0,.08)!important;
-    display:inline-block!important;
-  }
-
-  .work h2 span,
-  .work h2 em{
-    margin-left:0!important;
-    display:block!important;
-  }
-
-  .work-contact{
-    position:relative!important;
-    left:auto!important;
-    bottom:auto!important;
-    width:100%!important;
-    z-index:2!important;
-  }
-
-  .work img{
-    position:relative!important;
-    right:auto!important;
-    bottom:auto!important;
-    width:100%!important;
-    max-width:100%!important;
-    height:auto!important;
-    display:block!important;
-    margin-top:20px!important;
-    z-index:1!important;
-  }
-
-  .whatsapp-float{
-    width:56px;
-    height:56px;
-  }
-
-  .reveal-inner h2{
-    font-size:20vw;
-  }
-
+.language-menu button{
+  width:100%!important;
+  justify-content:flex-start!important;
+  font-size:.8rem!important;
 }
