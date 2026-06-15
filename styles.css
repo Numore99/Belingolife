@@ -115,6 +115,14 @@
   line-height:.82!important;
   margin:0 0 20px!important;
   word-break:break-word!important;
+
+  background:rgba(255,248,238,.88)!important;
+  padding:18px 16px!important;
+  border-radius:22px!important;
+  backdrop-filter:blur(6px)!important;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)!important;
+
+  display:inline-block!important;
 }
 
 .work h2 span,
