@@ -477,7 +477,22 @@
 
 @media (max-width:900px) and (max-height:520px){
   .course-media{
-    min-height:clamp(320px,58vw,430px)!important;
+    min-height:clamp(300px,48vw,410px)!important;
+  }
+
+  .circle.big{
+    width:min(48vw,380px)!important;
+    top:0!important;
+  }
+
+  .circle.small{
+    width:min(30vw,250px)!important;
+    right:0!important;
+    bottom:14px!important;
+  }
+
+  .course-title-block{
+    margin-top:18px!important;
   }
 
   .work img{
