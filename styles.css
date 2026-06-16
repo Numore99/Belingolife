@@ -23,7 +23,7 @@
 .feedback-page{background:var(--yellow);min-height:85svh}.feedback-page h2{position:relative;z-index:2;margin-top:6vh}.feedback-page:before{content:"";position:absolute;left:3vw;top:0;width:14vw;height:27vh;background:var(--pink)}.feedback-preview{display:grid;grid-template-columns:1fr 1fr;gap:8vw;margin:0 auto;max-width:1100px}.feedback-preview img{height:clamp(260px,42vw,520px);width:100%;object-fit:cover;box-shadow:var(--shadow)}.feedback-preview img:first-child{margin-top:-20px}.feedback-open{position:absolute;left:clamp(18px,6vw,90px);bottom:34px;border:0;background:var(--ink);color:#fff;border-radius:999px;padding:15px 22px;font-weight:900;cursor:pointer}.feedback-insta{top:auto;bottom:34px;right:clamp(18px,6vw,90px)}.feedback-grid figure{margin:0;background:#fff9ed;box-shadow:var(--shadow);padding:12px}.feedback-grid img{height:320px;width:100%;object-fit:cover}.feedback-grid figcaption{padding:14px;font-weight:800}
 .availability{background:#fff;display:grid;grid-template-columns:.8fr 1fr;align-items:center}.availability-copy{font-size:clamp(1.35rem,2.3vw,2.25rem)}.availability-copy h3{font-size:1em;margin:2em 0 .5em}.availability-title{color:var(--yellow);text-align:right}.availability-title strong{display:block;color:var(--ink)}.availability:after{content:"";position:absolute;right:6vw;top:0;width:14vw;height:31vh;background:var(--pink)}
 .contact-panel{background:#fff}.contact-panel p{font-size:1.4rem}.contact-card{display:flex;align-items:center;justify-content:center;min-height:130px;font-size:1.5rem;color:var(--ink)}
-.work{background:var(--yellow);min-height:88svh}.work:before{content:"";position:absolute;inset:0 24% 0 51%;background:#f8f1e6}.work h2{position:relative;z-index:1;font-size:clamp(5rem,14vw,13rem)}.work h2 span{margin-left:15vw}.work h2 em{font-style:normal;margin-left:38vw}.work-contact{position:absolute;left:clamp(24px,7vw,100px);bottom:15vh;z-index:3;font-size:clamp(1.1rem,2vw,1.8rem);font-weight:900}.work-contact p{color:var(--lav);max-width:480px}.work img{position:absolute;right:4vw;bottom:0;width:min(28vw,370px);height:52vh;object-fit:cover;z-index:2;box-shadow:var(--shadow)}
+.work{background:var(--yellow);min-height:88svh}.work:before{content:"";position:absolute;inset:0 24% 0 51%;background:#f8f1e6}.work h2{position:relative;z-index:1;font-size:clamp(5rem,12vw,11.5rem)}.work h2 span{margin-left:15vw}.work h2 em{font-style:normal;margin-left:38vw}.work-contact{position:absolute;left:clamp(24px,7vw,100px);bottom:4vh;z-index:3;font-size:clamp(1.05rem,1.65vw,1.45rem);font-weight:900}.work-contact p{color:var(--lav);max-width:480px}.work img{position:absolute;right:4vw;bottom:0;width:min(28vw,370px);height:52vh;object-fit:cover;z-index:2;box-shadow:var(--shadow)}
 .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:120;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 18px 38px rgba(0,0,0,.28)}.whatsapp-float svg{width:36px;height:36px;fill:currentColor}.footer{background:#151515;color:#fff;padding:24px;text-align:center;font-weight:800}
 @media (max-width:850px){.topbar{align-items:flex-start}.brand span:last-child{display:none}.top-actions{gap:6px}.top-btn{padding:9px 10px;font-size:.82rem}.language-menu{left:0;right:auto;z-index:140}.pdf-page{min-height:auto;padding:54px 18px}.hero{min-height:82svh}.hero-title{justify-self:start;text-align:left;margin-top:35svh;max-width:100%}.hero-title h1{font-size:clamp(4.7rem,24vw,6.2rem);line-height:.92;letter-spacing:.006em;max-width:100%;overflow-wrap:normal}.hero-title p{letter-spacing:.12em}.hero-cta{position:relative;left:auto;bottom:auto;display:inline-flex;margin-top:18px}.about,.beliefs,.course,.availability{display:block}.about-title h2,.course h2,.feedback-page h2,.availability-title,.work h2{font-size:clamp(3.8rem,18vw,5.6rem);line-height:.94;letter-spacing:-.004em}.star-one{left:auto;right:-12vw;top:10px}.about-copy{margin:22px 0}.about-collage{min-height:560px}.photo.room{right:-28px;width:86vw;height:230px}.photo.isa{right:0;bottom:0;width:70vw;height:300px}.photo.desk{left:-18px;bottom:110px;width:50vw;height:210px}.thats-me{right:22vw;bottom:325px}.beliefs h2{font-size:clamp(4.2rem,19vw,6rem);line-height:.92;letter-spacing:-.004em;margin-bottom:28px}.belief-text{font-size:1.25rem}.quote-card{margin-top:24px}.course-media{min-height:340px}.circle.big{width:76vw}.circle.small{width:47vw;right:0;bottom:0}.yellow-block{inset:-14px auto auto 36%;width:110px;height:145px}.course-copy,.course-side{font-size:1.15rem}.method-grid,.feedback-grid,.contact-actions,.feedback-preview{grid-template-columns:1fr}.feedback-page{padding-top:36px;padding-bottom:110px}.feedback-page h2{font-size:clamp(4.2rem,19vw,6rem);line-height:.92;letter-spacing:-.004em;margin-top:0;margin-bottom:28px}.feedback-preview{gap:18px}.feedback-preview img{height:260px}.feedback-open,.feedback-insta{position:relative;left:auto;right:auto;bottom:auto;margin:18px 8px 0 0;display:inline-flex}.availability-title{text-align:left;font-size:clamp(3.8rem,18vw,5.6rem);margin-top:42px}.availability:after{width:33vw}.work{min-height:720px}.work:before{inset:0 0 0 44%}.work h2{font-size:clamp(3.8rem,18vw,5.6rem);line-height:.94;letter-spacing:-.004em}.work h2 span,.work h2 em{margin-left:0}.work-contact{left:18px;bottom:32px}.work img{right:0;width:50vw;height:250px}.whatsapp-float{width:56px;height:56px}.reveal-inner h2{font-size:clamp(3.5rem,17vw,5.4rem);line-height:.96;letter-spacing:-.004em}}
 
@@ -164,4 +164,324 @@
   z-index:2!important;
 }
 
+}
+
+/* Responsive stability: tablets and small landscape screens keep the same look without overlaps. */
+@media (min-width:851px) and (max-width:1100px){
+  .topbar{
+    align-items:flex-start;
+  }
+
+  .brand span:last-child{
+    display:none;
+  }
+
+  .top-actions{
+    flex:1;
+    gap:8px;
+  }
+
+  .pdf-page{
+    min-height:auto;
+    padding:clamp(56px,6vw,78px) clamp(28px,5vw,64px);
+  }
+
+  .hero{
+    min-height:calc(100svh - 78px);
+  }
+
+  .hero-title{
+    max-width:100%;
+    margin:0 clamp(10px,3vw,40px) 8vh 0;
+  }
+
+  .hero-title h1{
+    font-size:clamp(6.4rem,14vw,9rem);
+    line-height:.9;
+    letter-spacing:-.01em;
+  }
+
+  .hero-title p{
+    letter-spacing:.14em;
+  }
+
+  .about-title h2,
+  .course h2,
+  .feedback-page h2,
+  .availability-title,
+  .work h2,
+  .beliefs h2,
+  .reveal-inner h2{
+    line-height:.92;
+    letter-spacing:-.012em;
+  }
+
+  .about-title h2,
+  .course h2,
+  .feedback-page h2,
+  .availability-title{
+    font-size:clamp(5rem,10vw,7.4rem);
+  }
+
+  .about{
+    grid-template-columns:.86fr 1.14fr;
+    gap:32px;
+  }
+
+  .about-copy{
+    margin-left:0;
+    max-width:100%;
+  }
+
+  .about-collage{
+    min-height:590px;
+  }
+
+  .photo.room{
+    right:-30px;
+    width:min(54vw,560px);
+    height:300px;
+  }
+
+  .photo.isa{
+    width:min(42vw,420px);
+    height:330px;
+  }
+
+  .photo.desk{
+    width:min(30vw,270px);
+    height:230px;
+  }
+
+  .thats-me{
+    right:18vw;
+    bottom:330px;
+  }
+
+  .beliefs{
+    grid-template-columns:.8fr 1.1fr;
+    gap:34px;
+  }
+
+  .beliefs h2{
+    font-size:clamp(5.4rem,10.8vw,8rem);
+  }
+
+  .belief-text{
+    font-size:clamp(1.18rem,2vw,1.55rem);
+  }
+
+  .quote-card{
+    grid-column:1 / -1;
+    justify-self:end;
+    width:min(48vw,360px);
+    margin-top:-26px;
+  }
+
+  .course{
+    grid-template-columns:.75fr 1.05fr;
+    gap:34px;
+    align-items:start;
+  }
+
+  .course-media{
+    min-height:440px;
+  }
+
+  .circle.big{
+    width:min(42vw,390px);
+  }
+
+  .circle.small{
+    width:min(27vw,240px);
+  }
+
+  .course-title-block{
+    align-self:start;
+  }
+
+  .yellow-block{
+    width:140px;
+    height:170px;
+    inset:-18px auto auto 34%;
+  }
+
+  .course-copy{
+    grid-column:2;
+    font-size:clamp(1.05rem,1.8vw,1.35rem);
+  }
+
+  .course-side{
+    grid-column:1 / -1;
+    font-size:clamp(1.05rem,1.8vw,1.35rem);
+    margin:0;
+  }
+
+  .feedback-page{
+    min-height:auto;
+    padding-bottom:120px;
+  }
+
+  .feedback-page h2{
+    margin-top:0;
+    margin-bottom:34px;
+  }
+
+  .feedback-preview{
+    gap:32px;
+  }
+
+  .feedback-preview img{
+    height:clamp(260px,34vw,390px);
+  }
+
+  .availability{
+    grid-template-columns:1fr .9fr;
+    gap:36px;
+  }
+
+  .availability-copy{
+    font-size:clamp(1.18rem,2vw,1.55rem);
+  }
+
+  .availability-title{
+    font-size:clamp(4.8rem,10vw,7rem);
+  }
+
+  .availability:after{
+    width:18vw;
+    height:240px;
+  }
+
+  .work{
+    min-height:auto;
+    padding-bottom:110px;
+  }
+
+  .work h2{
+    font-size:clamp(5rem,11vw,8rem);
+    line-height:.94;
+    letter-spacing:-.01em;
+  }
+
+  .work h2 span{
+    margin-left:8vw;
+  }
+
+  .work h2 em{
+    margin-left:22vw;
+  }
+
+  .work-contact{
+    position:relative;
+    left:auto;
+    bottom:auto;
+    max-width:520px;
+    margin-top:32px;
+    font-size:clamp(1.05rem,2vw,1.35rem);
+  }
+
+  .work img{
+    width:min(34vw,320px);
+    height:330px;
+  }
+}
+
+@media (max-width:850px){
+  .hero-title h1{
+    font-size:clamp(4.4rem,22vw,6.2rem)!important;
+    line-height:.94!important;
+    letter-spacing:.01em!important;
+  }
+
+  .about-title h2,
+  .course h2,
+  .feedback-page h2,
+  .availability-title,
+  .work h2,
+  .beliefs h2,
+  .reveal-inner h2{
+    line-height:.96!important;
+    letter-spacing:0!important;
+  }
+
+  .about-collage{
+    min-height:590px;
+  }
+
+  .feedback-page{
+    padding-top:42px!important;
+  }
+
+  .feedback-page h2{
+    margin-bottom:34px!important;
+  }
+
+  .course-title-block{
+    margin-bottom:22px;
+  }
+
+  .yellow-block{
+    width:96px!important;
+    height:128px!important;
+  }
+}
+
+@media (max-width:900px) and (max-height:520px){
+  .pdf-page{
+    min-height:auto;
+    padding-top:42px;
+    padding-bottom:42px;
+  }
+
+  .hero{
+    min-height:calc(100svh - 86px);
+  }
+
+  .hero-title{
+    margin-top:18svh!important;
+    margin-bottom:24px!important;
+  }
+
+  .hero-title h1{
+    font-size:clamp(4.2rem,15vw,7rem)!important;
+  }
+
+  .hero-cta{
+    position:relative;
+    left:auto;
+    bottom:auto;
+    margin-top:16px;
+  }
+}
+
+@media (max-width:850px){
+  .course-media{
+    min-height:clamp(380px,82vw,640px)!important;
+    overflow:hidden!important;
+  }
+
+  .course-title-block{
+    margin-top:14px!important;
+  }
+
+  .circle.big{
+    width:min(76vw,560px)!important;
+  }
+
+  .circle.small{
+    width:min(47vw,360px)!important;
+    bottom:18px!important;
+  }
+}
+
+@media (max-width:900px) and (max-height:520px){
+  .course-media{
+    min-height:clamp(320px,58vw,430px)!important;
+  }
+
+  .work img{
+    max-height:70vh!important;
+    object-fit:cover!important;
+  }
 }
