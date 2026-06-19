@@ -69,6 +69,10 @@
   .reveal-on-scroll.reveal-scale{
     transform:translate3d(0,22px,0);
   }
+
+  .reveal-on-scroll.reveal-photo-delay{
+    transition-delay:90ms!important;
+  }
 }
 
 @media (prefers-reduced-motion:reduce){
