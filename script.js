@@ -506,9 +506,49 @@ function setupLevelTabs() {
   });
 }
 
+function setupScrollReveal() {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const revealGroups = [
+    [".about-title, .beliefs h2, .course-title-block, .feedback-page h2, .availability-title, .work h2, .reveal-inner h2", "reveal-from-left"],
+    [".about-copy, .belief-text, .course-copy, .course-side, .availability-copy, .work-contact, .level-card, .contact-card", "reveal-from-right"],
+    [".about-collage .photo, .quote-card, .circle, .feedback-preview img, .feedback-card-pair, .method-grid article, .work img", "reveal-scale"],
+    [".hero-cta, .feedback-open, .feedback-insta, .insta-chip", ""]
+  ];
+
+  const elements = [];
+  revealGroups.forEach(([selector, variant]) => {
+    document.querySelectorAll(selector).forEach((element, index) => {
+      if (element.classList.contains("reveal-on-scroll")) return;
+      element.classList.add("reveal-on-scroll");
+      if (variant) element.classList.add(variant);
+      element.style.setProperty("--reveal-delay", `${Math.min(index, 3) * 70}ms`);
+      elements.push(element);
+    });
+  });
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    elements.forEach((element) => element.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: "0px 0px -12% 0px",
+    threshold: 0.12
+  });
+
+  elements.forEach((element) => observer.observe(element));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupLanguageMenu();
   setupPanels();
   setupLevelTabs();
+  setupScrollReveal();
   applyLanguage(currentLang);
 });
